@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "latest": "v0.1.2",
-  "generatedAt": "2026-06-19T18:01:49Z",
+  "generatedAt": "2026-06-19T18:17:07Z",
   "releases": [
     {
       "tag": "v0.1.2",
       "version": "0.1.2",
       "title": "Canoryn 0.1.2",
-      "publishedAt": "2026-06-19T18:01:49Z",
+      "publishedAt": "2026-06-19T18:01:57Z",
       "prerelease": false,
       "summary": "",
       "body": "# Canoryn 0.1.2\n\nThis one makes Canoryn able to update itself.\n\n### Fixed\n- **Automatic updates now work.** Earlier builds couldn't detect new versions (the update feed\n  was returning an error). Canoryn now checks for updates on launch and installs them cleanly.\n\n### Added\n- **Update indicator in the sidebar.** When a new version is ready, a tappable **\"Update\n  available\"** pill appears at the top of the sidebar — one click downloads and installs it.\n\n### Note for v0.1.0 / v0.1.1 users\nThose builds shipped with the broken update feed, so this is the release that gets you onto\nworking auto-updates. If your app doesn't prompt you automatically, grab v0.1.2 here once — every\nupdate after this is automatic.\n\n### Install\nCanoryn isn't notarized yet, so macOS shows a one-time warning. To open it:\n- **Easiest (Terminal):** `xattr -dr com.apple.quarantine /Applications/Canoryn.app`\n- **Or:** System Settings → Privacy & Security → scroll down → **Open Anyway**\n\nThanks for trying the beta — **support@procodeai.com**.\n",
@@ -18,12 +18,26 @@
       "dmgSha256": "c18cd7667d17821aaf275f32eca0955ee6213128b0b3301353d76c5fc441d24c"
     },
     {
+      "tag": "v0.1.1",
+      "version": "0.1.1",
+      "title": "Canoryn 0.1.1",
+      "publishedAt": "2026-06-19T13:14:45Z",
+      "prerelease": true,
+      "summary": "",
+      "body": "# Canoryn 0.1.1\n\nA quick, important patch.\n\n### Fixed\n- **No more crash on \"Connect Spotify.\"** Builds without Spotify configured no longer crash when\n  the Spotify connection is opened from Settings.\n\n### Changed\n- **Spotify is temporarily unavailable in public builds.** We're aligning with Spotify's\n  Developer Policy, which restricts Web-API control for voice assistants. Apple Music control\n  still works today, and broader **system media controls + Apple Music** music support is coming\n  in the next release.\n\n### Install\nCanoryn isn't notarized yet, so macOS shows a one-time warning. To open it:\n- **Easiest (Terminal):** `xattr -dr com.apple.quarantine /Applications/Canoryn.app`\n- **Or:** System Settings → Privacy & Security → scroll down → **Open Anyway**\n\nThanks for trying the beta — **support@procodeai.com**.\n",
+      "dmgUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.1/Canoryn.dmg",
+      "dmgSha256Url": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.1/Canoryn.dmg.sha256",
+      "appcastUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.1/appcast.xml",
+      "dmgSizeBytes": 21184260,
+      "dmgSha256": "d3e8ef8a922615bb6fc2482b811e0c782897d34311e4d2fb831c9ea3db23fac9"
+    },
+    {
       "tag": "v0.1.0",
       "version": "0.1.0",
       "title": "Canoryn 0.1.0",
       "publishedAt": "2026-06-19T09:13:05Z",
       "prerelease": true,
-      "summary": "First public beta of Canoryn.",
+      "summary": "",
       "body": "# Canoryn 0.1.0 — first public beta 🎉\n\n**Canoryn is a local-first AI agent builder for macOS.** Build private AI agents that run on\n*your* models — local or cloud — and act on your actual Mac. Native, offline-capable, and yours.\n\n### Highlights\n- **🏗️ The Architect** — a visual canvas to *build* agents: wire triggers, AI nodes, and native\n  macOS actions into agents you run, save, and reuse. Like a game-engine Blueprint, but for AI agents.\n- **🎙️ Talk or type** — a menu-bar assistant with a customizable shortcut; speak or chat, and it\n  acts on your Mac.\n- **🧠 Bring your own models** — fully private, offline inference via Ollama (Llama 3.2, Qwen 2.5…),\n  or plug in your own OpenAI / Anthropic / Gemini / Groq keys. You own the brain.\n- **🔌 Native integrations** — control Finder, Calendar, Reminders, Apple Music / Spotify, system\n  settings, and more.\n- **📄 Portable `.cryn` agents** — every agent is a readable file you own, version-control, and share.\n- **🔒 Local-first & private** — a real native macOS app; your data stays on your machine.\n\n### This is an early beta\n0.1.0 is our first real public milestone — it's evolving fast and there will be rough edges.\nTip: for the most reliable agents on local models, **pin the tools** on your AI node (or bring a\nfrontier cloud key for open-ended tasks). We'd love your feedback.\n\n### Requirements\n- macOS 14 or later (Apple Silicon & Intel)\n- ~20 MB download (native app — no Electron)\n\n### Installing\nCanoryn isn't notarized yet (no paid Apple Developer account), so macOS shows a one-time warning.\nTo open it:\n- **Easiest (Terminal):** `xattr -dr com.apple.quarantine /Applications/Canoryn.app`\n- **Or:** System Settings → Privacy & Security → scroll down → **Open Anyway**\n\n### What's next\nReliability hardening, a memory that feels like a mind, more native actions, and a blueprint gallery.\n\nFound a bug or have an idea? **support@procodeai.com**\n",
       "dmgUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.0/Canoryn.dmg",
       "dmgSha256Url": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.0/Canoryn.dmg.sha256",
