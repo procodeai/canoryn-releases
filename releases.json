@@ -1,8 +1,22 @@
 {
   "schemaVersion": 1,
-  "latest": "v0.1.0",
-  "generatedAt": "2026-06-19T09:13:05Z",
+  "latest": "v0.1.2",
+  "generatedAt": "2026-06-19T18:01:49Z",
   "releases": [
+    {
+      "tag": "v0.1.2",
+      "version": "0.1.2",
+      "title": "Canoryn 0.1.2",
+      "publishedAt": "2026-06-19T18:01:49Z",
+      "prerelease": false,
+      "summary": "",
+      "body": "# Canoryn 0.1.2\n\nThis one makes Canoryn able to update itself.\n\n### Fixed\n- **Automatic updates now work.** Earlier builds couldn't detect new versions (the update feed\n  was returning an error). Canoryn now checks for updates on launch and installs them cleanly.\n\n### Added\n- **Update indicator in the sidebar.** When a new version is ready, a tappable **\"Update\n  available\"** pill appears at the top of the sidebar — one click downloads and installs it.\n\n### Note for v0.1.0 / v0.1.1 users\nThose builds shipped with the broken update feed, so this is the release that gets you onto\nworking auto-updates. If your app doesn't prompt you automatically, grab v0.1.2 here once — every\nupdate after this is automatic.\n\n### Install\nCanoryn isn't notarized yet, so macOS shows a one-time warning. To open it:\n- **Easiest (Terminal):** `xattr -dr com.apple.quarantine /Applications/Canoryn.app`\n- **Or:** System Settings → Privacy & Security → scroll down → **Open Anyway**\n\nThanks for trying the beta — **support@procodeai.com**.\n",
+      "dmgUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.2/Canoryn.dmg",
+      "dmgSha256Url": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.2/Canoryn.dmg.sha256",
+      "appcastUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.2/appcast.xml",
+      "dmgSizeBytes": 21200966,
+      "dmgSha256": "c18cd7667d17821aaf275f32eca0955ee6213128b0b3301353d76c5fc441d24c"
+    },
     {
       "tag": "v0.1.0",
       "version": "0.1.0",
