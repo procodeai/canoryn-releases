@@ -1,8 +1,22 @@
 {
   "schemaVersion": 1,
-  "latest": "v0.1.2",
-  "generatedAt": "2026-06-19T18:17:07Z",
+  "latest": "v0.1.4",
+  "generatedAt": "2026-07-05T09:19:42Z",
   "releases": [
+    {
+      "tag": "v0.1.4",
+      "version": "0.1.4",
+      "title": "Canoryn 0.1.4",
+      "publishedAt": "2026-07-05T09:19:35Z",
+      "prerelease": false,
+      "summary": "",
+      "body": "# Canoryn 0.1.4\n\nMusic that just works — for everyone.\n\n### Added\n- **Universal media controls.** \"Pause\", \"next song\", \"previous track\" now control whatever is\n  playing — Spotify, Apple Music, even a browser tab — using system media keys. No login or\n  subscription needed.\n- **Smarter \"play music.\"** Canoryn now picks the best available way to play: your Spotify\n  account if connected, the Spotify desktop app if installed (free accounts work), or **YouTube\n  Music in your browser** as a free fallback that works for everyone. Saying \"on Apple Music\" or\n  \"on Spotify\" always respects your choice.\n- **Play Spotify links directly.** Give Canoryn a Spotify track/playlist link and it plays it on\n  the Spotify desktop app — no Spotify account connection required.\n\n### Fixed\n- **No more false \"ISSUES\" warnings.** Music commands (and things like \"play the Game of Thrones\n  theme\") no longer show incorrect execution-trace errors after succeeding.\n- **Music requests no longer fail silently** when a music service is turned off in Connections —\n  Canoryn routes to one that's available instead.\n- Web search results now include readable page content more often.\n\n### Changed\n- **Wallpaper fetching follows Unsplash's API guidelines** (download attribution + photographer\n  credit).\n\n### Install\nCanoryn isn't notarized yet, so macOS shows a one-time warning. To open it:\n- **Easiest (Terminal):** `xattr -dr com.apple.quarantine /Applications/Canoryn.app`\n- **Or:** System Settings → Privacy & Security → scroll down → **Open Anyway**\n\nThanks for trying the beta — **support@procodeai.com**.\n",
+      "dmgUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.4/Canoryn.dmg",
+      "dmgSha256Url": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.4/Canoryn.dmg.sha256",
+      "appcastUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.4/appcast.xml",
+      "dmgSizeBytes": 21245435,
+      "dmgSha256": "bed27ef17283aa84025026482d1f928bf4d93e358da8ed4b7ca0f54e9008ed40"
+    },
     {
       "tag": "v0.1.2",
       "version": "0.1.2",
