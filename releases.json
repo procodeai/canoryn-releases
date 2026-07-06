@@ -1,8 +1,22 @@
 {
   "schemaVersion": 1,
-  "latest": "v0.1.4",
-  "generatedAt": "2026-07-06T13:13:20Z",
+  "latest": "v0.1.5",
+  "generatedAt": "2026-07-06T14:36:28Z",
   "releases": [
+    {
+      "tag": "v0.1.5",
+      "version": "0.1.5",
+      "title": "Canoryn 0.1.5",
+      "publishedAt": "2026-07-06T14:36:09Z",
+      "prerelease": false,
+      "summary": "",
+      "body": "# Canoryn 0.1.5\n\nRelease automation and CLI polish.\n\n### Added\n- Release publishing now refreshes the public changelog feed and dispatches a docs rebuild after a successful release.\n- Music planning has additional reflex evaluation coverage for safer routing changes.\n\n### Fixed\n- Release feed publishing now preserves the latest stable release when older versions are backfilled.\n- Sparkle update feed URLs are validated before the expensive archive step, so a bad feed configuration fails early.\n- CLI stdout is cleaner for scripted runs and automation output.\n\n### Install\nCanoryn is still in beta and is not notarized yet, so macOS may show a one-time warning. To open it:\n- **Easiest (Terminal):** `xattr -dr com.apple.quarantine /Applications/Canoryn.app`\n- **Or:** System Settings -> Privacy & Security -> scroll down -> **Open Anyway**\n\nThanks for trying the beta - **support@procodeai.com**.\n",
+      "dmgUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.5/Canoryn.dmg",
+      "dmgSha256Url": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.5/Canoryn.dmg.sha256",
+      "appcastUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.5/appcast.xml",
+      "dmgSizeBytes": 22861799,
+      "dmgSha256": "92cca2e067b7bc990170771d905b279354acf473204c530627df724a50dd0a13"
+    },
     {
       "tag": "v0.1.4",
       "version": "0.1.4",
