@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "latest": "v0.1.5",
-  "generatedAt": "2026-07-06T14:36:28Z",
+  "generatedAt": "2026-07-06T14:58:04Z",
   "releases": [
     {
       "tag": "v0.1.5",
@@ -14,8 +14,8 @@
       "dmgUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.5/Canoryn.dmg",
       "dmgSha256Url": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.5/Canoryn.dmg.sha256",
       "appcastUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.5/appcast.xml",
-      "dmgSizeBytes": 22861799,
-      "dmgSha256": "92cca2e067b7bc990170771d905b279354acf473204c530627df724a50dd0a13"
+      "dmgSizeBytes": 21244793,
+      "dmgSha256": "e0e4529577d2f60a20294e9b9836baefaaee501034a5c6fd9be5ce97747bbb53"
     },
     {
       "tag": "v0.1.4",
