@@ -1,22 +1,8 @@
 {
   "schemaVersion": 1,
-  "latest": "v0.1.3",
-  "generatedAt": "2026-07-06T13:07:59Z",
+  "latest": "v0.1.4",
+  "generatedAt": "2026-07-06T13:13:20Z",
   "releases": [
-    {
-      "tag": "v0.1.3",
-      "version": "0.1.3",
-      "title": "Canoryn 0.1.3",
-      "publishedAt": "2026-07-06T13:07:51Z",
-      "prerelease": false,
-      "summary": "",
-      "body": "# Canoryn 0.1.3\n\n### Fixed\n- **Music works without Spotify.** \"Play music\" and mood-based ambiance now route to **Apple\n  Music** automatically in builds without Spotify configured — mood music no longer silently\n  does nothing. (When Spotify is configured, it's still used.)\n\n### Changed\n- **Unsplash wallpaper compliance.** When Canoryn fetches a desktop wallpaper from Unsplash it now\n  follows Unsplash's API guidelines (download-attribution endpoint + photographer credit captured).\n\n### Install\nCanoryn isn't notarized yet, so macOS shows a one-time warning. To open it:\n- **Easiest (Terminal):** `xattr -dr com.apple.quarantine /Applications/Canoryn.app`\n- **Or:** System Settings → Privacy & Security → scroll down → **Open Anyway**\n\nThanks for trying the beta — **support@procodeai.com**.\n",
-      "dmgUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.3/Canoryn.dmg",
-      "dmgSha256Url": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.3/Canoryn.dmg.sha256",
-      "appcastUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.3/appcast.xml",
-      "dmgSizeBytes": 21204683,
-      "dmgSha256": "f5910bf9457e132e45db739b94b93a161615f885e5be66eabbb2228c4331da08"
-    },
     {
       "tag": "v0.1.4",
       "version": "0.1.4",
@@ -30,6 +16,20 @@
       "appcastUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.4/appcast.xml",
       "dmgSizeBytes": 21245435,
       "dmgSha256": "bed27ef17283aa84025026482d1f928bf4d93e358da8ed4b7ca0f54e9008ed40"
+    },
+    {
+      "tag": "v0.1.3",
+      "version": "0.1.3",
+      "title": "Canoryn 0.1.3",
+      "publishedAt": "2026-07-06T13:07:51Z",
+      "prerelease": false,
+      "summary": "",
+      "body": "# Canoryn 0.1.3\n\n### Fixed\n- **Music works without Spotify.** \"Play music\" and mood-based ambiance now route to **Apple\n  Music** automatically in builds without Spotify configured — mood music no longer silently\n  does nothing. (When Spotify is configured, it's still used.)\n\n### Changed\n- **Unsplash wallpaper compliance.** When Canoryn fetches a desktop wallpaper from Unsplash it now\n  follows Unsplash's API guidelines (download-attribution endpoint + photographer credit captured).\n\n### Install\nCanoryn isn't notarized yet, so macOS shows a one-time warning. To open it:\n- **Easiest (Terminal):** `xattr -dr com.apple.quarantine /Applications/Canoryn.app`\n- **Or:** System Settings → Privacy & Security → scroll down → **Open Anyway**\n\nThanks for trying the beta — **support@procodeai.com**.\n",
+      "dmgUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.3/Canoryn.dmg",
+      "dmgSha256Url": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.3/Canoryn.dmg.sha256",
+      "appcastUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.3/appcast.xml",
+      "dmgSizeBytes": 21204683,
+      "dmgSha256": "f5910bf9457e132e45db739b94b93a161615f885e5be66eabbb2228c4331da08"
     },
     {
       "tag": "v0.1.2",
