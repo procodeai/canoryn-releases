@@ -1,8 +1,22 @@
 {
   "schemaVersion": 1,
-  "latest": "v0.1.5",
-  "generatedAt": "2026-07-06T14:58:04Z",
+  "latest": "v0.1.6",
+  "generatedAt": "2026-07-21T20:31:56Z",
   "releases": [
+    {
+      "tag": "v0.1.6",
+      "version": "0.1.6",
+      "title": "Canoryn 0.1.6",
+      "publishedAt": "2026-07-21T20:31:32Z",
+      "prerelease": false,
+      "summary": "",
+      "body": "# Canoryn 0.1.6\n\nBuild workflows with chat or an external AI agent, run research boards, and trust enable/run behavior.\n\n### Added\n- **Canvas Architect Copilot** — describe what you want in chat next to the canvas; Canoryn builds and edits the workflow instead of running the task immediately.\n- **Ask before it assumes** — when something is unclear (location, schedule, missing tool), the copilot shows choices for you to pick.\n- **Edit without rebuilding** — change one setting, swap a step, add or remove a node, or reconnect steps while keeping the rest of the workflow intact.\n- **External agents can author too** — Codex, Claude, Cursor, and Antigravity can create, inspect, edit, enable, and run workflows through Canoryn’s MCP/CLI (no hand-editing project files).\n- **See what you can build** — browse the live list of steps you can put on a workflow (with their inputs/outputs) before inventing something new.\n- **Dispatch other coding agents from a workflow** — a canvas step can hand work to Codex, Claude, Cursor, or Antigravity on a repo and continue from the result.\n- **Research boards that actually run** — compare sites in parallel, synthesize a report, and optionally email it — as a real workflow, not a static diagram.\n- **Safer custom tools** — when Canoryn proposes a script tool, you see the full code before approving; approved tools show up as normal canvas steps with the source visible.\n- **Shorter workflow IDs** in the CLI — short readable handles instead of full UUIDs.\n- **CLI & MCP settings** — install and diagnose the command-line / agent connection from Settings; optional auto-allow for routine external runs (enable still asks).\n\n### Changed\n- **“Build a workflow…” means build** — everyday shortcuts no longer fire the underlying action when you asked to design a workflow.\n- **Enable means it can run for agents/CLI** — turning a workflow on publishes it so scheduled and external runs work; Play on the canvas still works while drafting.\n- **Clearer split** — tools that *edit* a workflow stay separate from steps that *live on* the canvas, so agents don’t confuse the two.\n\n### Fixed\n- Enabling a draft no longer leaves it “on” in the UI but blocked when an agent or CLI tries to run it; errors say why.\n- Canvas **Play** works for scheduled / event-triggered workflows and no longer gets stuck on extra consent.\n- Markdown reports keep their content after Play; browser pages survive collapsing groups.\n- Custom tools you already trusted show up reliably as canvas steps after restart.\n- Workspace and canvas focus/pan quirks that made editing feel sticky or unpredictable.\n\n### Install\nCanoryn is still in beta and is not notarized yet, so macOS may show a one-time warning. To open it:\n- **Easiest (Terminal):** `xattr -dr com.apple.quarantine /Applications/Canoryn.app`\n- **Or:** System Settings -> Privacy & Security -> scroll down -> **Open Anyway**\n\nThanks for trying the beta - **support@procodeai.com**.\n",
+      "dmgUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.6/Canoryn.dmg",
+      "dmgSha256Url": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.6/Canoryn.dmg.sha256",
+      "appcastUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.1.6/appcast.xml",
+      "dmgSizeBytes": 27521020,
+      "dmgSha256": "46006d2a22412e8b90770f435078c86fa4fea52bfa516c2eace7eb12ea911d8d"
+    },
     {
       "tag": "v0.1.5",
       "version": "0.1.5",
