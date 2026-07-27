@@ -1,8 +1,22 @@
 {
   "schemaVersion": 1,
-  "latest": "v0.1.6",
-  "generatedAt": "2026-07-21T20:31:56Z",
+  "latest": "v0.2.0",
+  "generatedAt": "2026-07-27T16:07:07Z",
   "releases": [
+    {
+      "tag": "v0.2.0",
+      "version": "0.2.0",
+      "title": "Canoryn 0.2.0",
+      "publishedAt": "2026-07-27T16:06:26Z",
+      "prerelease": false,
+      "summary": "",
+      "body": "# Canoryn 0.2.0\n\nBrowser nodes that act like a real browser desk, terminals agents can actually read, models you pick on purpose, and a clearer canvas for building and running workflows.\n\n### Added\n- **Browser that behaves like a browser** — search a phrase from the address bar; localhost stays `http` for local dev servers; idle pages sleep after about 30 minutes and come back where you left them.\n- **Point at a thing, hand it to an agent** — click an element on a page, add a note about why, and wire it into an AI step (including multi-element picks).\n- **Tell me when this changes** — watch an element and let a workflow run on price drops, build status, stock arriving, and similar signals.\n- **Capture a region for vision** — for charts, PDFs, and anything the page structure can’t describe.\n- **Terminal steps agents can read** — live terminal on the canvas; an agent can run a command and see whether it passed. The shell can outlive the view.\n- **Pick your models** — star the few you use; those are the ones in the picker. Badges show which support tools, vision, and JSON.\n- **Attach images and files in chat** — several at once, including PDFs and text, through one multimodal path.\n- **Clearer nodes and run insight** — redesigned node chrome, execution context, per-node logs, and run history you can search with Run IDs.\n- **Secrets where they belong** — environment and Keychain-backed secrets for workflows that need credentials without stuffing them into the graph.\n- **Richer authoring for agents** — YAML source surface, canvas query language, and inspect formats (including mermaid/YAML) so CLI/MCP agents can read and edit graphs more precisely.\n- **Media control on the canvas** — find and silence background audio from browser sessions.\n- **MCP run inspection** — list runs and inspect steps from external agents without opening the UI.\n\n### Changed\n- **Model selection is literal** — no more provider tiers quietly choosing a different model than the one you picked.\n- **Zooming no longer changes the document** — wires stay attached to their ports at every zoom level; geometry stays scale-invariant.\n- **Downloaded / restored workflows land disarmed** — they stay off until you enable them; installs are size-capped and checksum-verified.\n- **Version history is durable** — more than three snapshots, and failures are reported instead of swallowed.\n- **Canvas LOD and chrome** — smoother detail at distance, animated active wires, and a steadier grid while you work.\n\n### Fixed\n- Workflows saved without their `.cryn` extension on some builds — Finder preview and double-click open work again.\n- Chat failing outright on some models when tools were attached.\n- Browser resume flicker, freeze-on-switch, and pages loading at the wrong size.\n- A page you’re looking at is never the idle-eviction victim.\n- Wire/port meeting points and low-detail node readability.\n- Terminal focus, login-shell startup, and honest store/HTTP error reporting.\n- Graph runner execution limits and cleaner LocalizedError messaging.\n\n### Install\nCanoryn is still in beta and is not notarized yet, so macOS may show a one-time warning. To open it:\n- **Easiest (Terminal):** `xattr -dr com.apple.quarantine /Applications/Canoryn.app`\n- **Or:** System Settings → Privacy & Security → scroll down → **Open Anyway**\n\nThanks for trying the beta — **support@procodeai.com**.\n",
+      "dmgUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.2.0/Canoryn.dmg",
+      "dmgSha256Url": "https://github.com/procodeai/canoryn-releases/releases/download/v0.2.0/Canoryn.dmg.sha256",
+      "appcastUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.2.0/appcast.xml",
+      "dmgSizeBytes": 30838902,
+      "dmgSha256": "acc26019a44c08b052f635e287acab53879ffc5044f9c544a321d0d68c470eba"
+    },
     {
       "tag": "v0.1.6",
       "version": "0.1.6",
