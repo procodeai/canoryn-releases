@@ -1,8 +1,22 @@
 {
   "schemaVersion": 1,
-  "latest": "v0.2.0",
-  "generatedAt": "2026-07-27T16:07:07Z",
+  "latest": "v0.2.1",
+  "generatedAt": "2026-07-28T03:33:21Z",
   "releases": [
+    {
+      "tag": "v0.2.1",
+      "version": "0.2.1",
+      "title": "Canoryn 0.2.1",
+      "publishedAt": "2026-07-28T03:32:52Z",
+      "prerelease": false,
+      "summary": "",
+      "body": "# Canoryn 0.2.1\n\nFixes for problems in 0.2.0 that blocked everyday use — chat and voice acting again, browser workflows running, and a smoother CLI install.\n\n### Fixed\n- **Asking Canoryn to do something works again** — requests like “build me a workflow” replied in text without actually doing the work. Chat, Architect chat beside the canvas, and voice were all affected.\n- **Workflows with a browser step run again** — after switching a browser profile, watching an element, or picking something on a page, the whole workflow refused to run and reported an unknown setting.\n- **Installing the command-line tool no longer asks for your password** — it installs into your own account. If that location isn’t on your PATH yet, Canoryn offers to add it and shows you the exact line first.\n- **Chat no longer fails on some OpenAI models** when a step needs tools; those requests were rejected before reaching the model.\n\n### Install\nCanoryn is still in beta and is not notarized yet, so macOS may show a one-time warning. To open it:\n- **Easiest (Terminal):** `xattr -dr com.apple.quarantine /Applications/Canoryn.app`\n- **Or:** System Settings → Privacy & Security → scroll down → **Open Anyway**\n\nThanks for trying the beta — **support@procodeai.com**.\n",
+      "dmgUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.2.1/Canoryn.dmg",
+      "dmgSha256Url": "https://github.com/procodeai/canoryn-releases/releases/download/v0.2.1/Canoryn.dmg.sha256",
+      "appcastUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.2.1/appcast.xml",
+      "dmgSizeBytes": 30845562,
+      "dmgSha256": "a0b0a703b0244c66fcdc8c1b1f3117f3a6c21fc57be2acfc034a1675758e929b"
+    },
     {
       "tag": "v0.2.0",
       "version": "0.2.0",
