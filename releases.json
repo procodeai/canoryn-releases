@@ -1,8 +1,22 @@
 {
   "schemaVersion": 1,
-  "latest": "v0.2.1",
-  "generatedAt": "2026-07-28T03:33:21Z",
+  "latest": "v0.3.0",
+  "generatedAt": "2026-08-12T20:07:58Z",
   "releases": [
+    {
+      "tag": "v0.3.0",
+      "version": "0.3.0",
+      "title": "Canoryn 0.3.0",
+      "publishedAt": "2026-08-12T20:07:43Z",
+      "prerelease": false,
+      "summary": "",
+      "body": "# Canoryn 0.3.0\n\nChat becomes a three-lane workbench: sessions, conversation, and a typed work panel bound to the folders you attach for that session. Review-first — inspect and commit beside the turn; edit for real work still happens in your external editor.\n\n### Added\n- **Session projects** — attach one or more folders to a chat (security-scoped bookmarks). Primary root locks once the session has history; secondary roots stay flexible; missing roots re-locate instead of vanishing. The agent and the work panel share that project.\n- **Typed work panel tabs** — File, Review, Terminal, Browser, Console, and Artifacts from a **+** picker. Preview tabs from a single click; pin what matters (running terminals auto-pin). Cap on non-pinned tabs; strip state persists per session.\n- **File desk** — hierarchical tree with git badges, syntax-highlighted read-only source, breadcrumbs, dual-axis scrolling, Open Externally / Reveal, and **Ask about line(s)…** to draft a path:line citation into the composer.\n- **Review workbench** — whole-root or file-scoped diffs; Uncommitted / Staged / Unstaged / Last commit / Agent Turn scopes; untracked and binary visibility; lazy viewport hydration; large trees (≥300 files) drop into single-file mode; stage / unstage / discard (MM paths keep staged); hunk Stage Change / Revert Change; commit composer with drafts.\n- **Agent-touched files open as preview tabs** — feed file cards resolve through the session project and land in the panel without leaving chat. Reviewed patches can apply atomically after consent.\n- **Terminal and browser tabs on the same live surfaces** as the Architect canvas. Switching tabs keeps them alive; closing a tab disposes that session.\n- **Project-scoped consent and sandbox** — in-project reads for coding; writes / shell / network / outside-project need approval; unclassified actions fail closed.\n- **Stronger coding agent loop** — stable conversation context, typed turn budgets, native tool-call progress, compacted checkpoints.\n- **Clearer main window** — shorter rail, Workflows Library column, Capabilities for skills / tools / connections / MCP; workflows separated from agents in navigation.\n\n### Changed\n- **Right pane is a work surface, not a mode switcher** — the old Files / Diff / Browser modes are gone; tabs own what is open.\n- **Disk is the source of truth for open files** — external edits and agent writes refresh through the project file watcher (including atomic saves).\n- **Unclassified tool actions fail closed** — “not classified” is no longer treated as “no effects.”\n- **Graph runs record more consistently** — automation and agent-driven runs show up in history.\n\n### Fixed\n- Right-pane lifecycle: close cleans up; switch keeps terminal/browser mounted.\n- Review empty states for untracked-only trees; discard that preserves staged content on mixed `MM` paths.\n- Selection and accent contrast in light and dark themes; chat selection spanning paragraphs.\n- Welcome cards that rendered empty; tree toggle and Open actions in the pane.\n- Context compaction so chat turns stop losing the thread mid-session.\n\n### Notes\nThis workbench is **review-first**, not an in-pane IDE (no LSP editing). Full reusable code/diff **canvas** surfaces and titlebar-hoisted tabs are still finishing. Deeper agent codebase navigation continues separately.\n\n### Install\nCanoryn is still in beta and is not notarized yet, so macOS may show a one-time warning. To open it:\n- **Easiest (Terminal):** `xattr -dr com.apple.quarantine /Applications/Canoryn.app`\n- **Or:** System Settings → Privacy & Security → scroll down → **Open Anyway**\n\nThanks for trying the beta — **support@procodeai.com**.\n",
+      "dmgUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.3.0/Canoryn.dmg",
+      "dmgSha256Url": "https://github.com/procodeai/canoryn-releases/releases/download/v0.3.0/Canoryn.dmg.sha256",
+      "appcastUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.3.0/appcast.xml",
+      "dmgSizeBytes": 34829885,
+      "dmgSha256": "f05608bd12729cf9d435398b1723d13b8db0d8bed83d73308cd1c7b18def1c69"
+    },
     {
       "tag": "v0.2.1",
       "version": "0.2.1",
