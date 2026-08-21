@@ -1,8 +1,22 @@
 {
   "schemaVersion": 1,
-  "latest": "v0.3.0",
-  "generatedAt": "2026-08-12T20:07:58Z",
+  "latest": "v0.4.0",
+  "generatedAt": "2026-08-21T18:55:41Z",
   "releases": [
+    {
+      "tag": "v0.4.0",
+      "version": "0.4.0",
+      "title": "Canoryn 0.4.0",
+      "publishedAt": "2026-08-21T18:55:27Z",
+      "prerelease": false,
+      "summary": "",
+      "body": "# Canoryn 0.4.0\n\nReview grows into a durable annotation surface, the native AppKit code/diff editors mature, and Appearance becomes a first-class Settings area — syntax themes, typography, and translucent native surfaces across Chat and Review.\n\n### Added\n- **Durable agent review threads** — annotations live in the project database, not in a chat transcript. Open them from Review or a normal file tab; replies and resolution stay with the repo so every session sees the same thread.\n- **Native diff annotation workflow** — comment on unified or split Review with anchors that survive edits; identity stays stable when the same file is open as File and Review.\n- **Contextual Git actions on changed files** — stage, discard, and related review actions from the changed-file tree without leaving the work panel.\n- **Unified SCM review layout** — combined staged/unstaged workflows with clearer VS Code–style separation while keeping the stacked review list.\n- **Syntax theme system** — ten built-in themes with independent Light/Dark palettes, optional mood harmonization, and a live Settings preview shared by File, Review, chat code blocks, and artifacts.\n- **Appearance & typography controls** — system or custom UI/code fonts, size and line-height for editors, mood-aware surfaces, Enhanced Transparency for editor canvases, and Reduce Transparency that always falls back to opaque.\n- **Configurable diff presentation** — tune how diffs render while keeping annotation anchors stable.\n\n### Changed\n- **Native AppKit text surfaces** — File and Review share the same presentation/typography snapshot so gutters, code, and chat blocks stay aligned.\n- **Translucent editor canvases** — when Enhanced Transparency is on, editors inherit the workbench material instead of painting a second accent background.\n- **PR merge default** — AgentOps / git helpers prefer merge commits over squash, matching the repo release policy.\n\n### Fixed\n- Typography live updates and chat markdown readability after appearance changes.\n- Review drafts preserved across refresh; editor hover interactions cleaned up.\n- Annotation identity no longer drifts between File and Review projections.\n- Repository refresh pipeline and Amend / generate UI stability in the commit composer.\n- Swift package dependencies pinned for reproducible CI.\n\n### Notes\nThis release deepens the **review-first** workbench from 0.3.0: annotations and themes ship; full in-pane IDE editing (LSP) and the optional editable-file workflow remain follow-ups. Canoryn is still in beta and is not notarized yet.\n\n### Install\nCanoryn is still in beta and is not notarized yet, so macOS may show a one-time warning. To open it:\n- **Easiest (Terminal):** `xattr -dr com.apple.quarantine /Applications/Canoryn.app`\n- **Or:** System Settings → Privacy & Security → scroll down → **Open Anyway**\n\nThanks for trying the beta — **support@procodeai.com**.\n",
+      "dmgUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.4.0/Canoryn.dmg",
+      "dmgSha256Url": "https://github.com/procodeai/canoryn-releases/releases/download/v0.4.0/Canoryn.dmg.sha256",
+      "appcastUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.4.0/appcast.xml",
+      "dmgSizeBytes": 35983732,
+      "dmgSha256": "d3a70b96c555dcc46ce90024a84e0e4f09e631166c8e5dcb89e7875b57186604"
+    },
     {
       "tag": "v0.3.0",
       "version": "0.3.0",
