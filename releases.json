@@ -1,8 +1,22 @@
 {
   "schemaVersion": 1,
-  "latest": "v0.6.0",
-  "generatedAt": "2026-09-25T15:11:43Z",
+  "latest": "v0.6.1",
+  "generatedAt": "2026-10-02T15:16:25Z",
   "releases": [
+    {
+      "tag": "v0.6.1",
+      "version": "0.6.1",
+      "title": "Canoryn 0.6.1",
+      "publishedAt": "2026-10-02T15:16:19Z",
+      "prerelease": false,
+      "summary": "",
+      "body": "# Canoryn 0.6.1\n\nCanoryn accounts arrive in the app, models become a section of their own, and the agent core becomes the default engine. Sign in from the Mac with a one-time code; the Account page shows who you are, your plan with a Verified tag, and this Mac. Every AI node now picks from the providers you set up, Claude and Gemini stream end to end, and documents learn math written the way GitHub writes it. Many fixes from living with 0.6.0 come along.\n\n### Added\n- **Sign in from the app.** **Sign In** or **Create Account** opens canoryn.app once; you confirm there and the Mac is signed in with a one-time code. The session lives in the Keychain, and plans are trusted only from signed entitlements.\n- **The Account page.** Your name and email, **Manage on canoryn.app**, your plan with a **Verified** tag (checked, checking or not verified, with a button to check again) and this Mac, with a link to manage your devices. Signing in with a second account keeps both; switching shows only once there are two.\n- **Models as a main section.** Set up providers once (keys, discovery, the models each offers); every AI node picks from them. Provider badges show the provider's logo.\n- **Math in documents.** `$$…$$` blocks and inline `$…$` render as on GitHub, in Preview, Edit, exported pages, PDFs and published pages.\n- **Agents comment.** The agent can open comment threads on code and documents. Code comment cards are threads you can answer, edit and delete, and comments render Markdown.\n- **One copy button.** Code blocks, inline code and chat messages share one icon-only copy button: \"Copy\" on hover, a green checkmark when done.\n\n### Changed\n- **The agent core is the default engine** for chat. Read-only tools run freely inside the project; outside any project a read asks first.\n- Claude keys, discovery, tools, thinking and streaming work end to end. Gemini streams for real, tool turns replay correctly, and reasoning shows from every OpenAI-style server.\n- Inline code hugs its text and is as tall as the code; on the line being edited it reads raw.\n- Wallpaper history lives in `~/.canoryn`, not `~/Documents`.\n\n### Fixed\n- A Markdown document on the canvas no longer hangs, then crashes, the app when you zoom.\n- Workflows with an image or video File node run again (`mediaAspect` error).\n- Long documents scroll to the end without sticking or shaking.\n- The open document keeps the editor's width when the file tree widens; tables in Edit follow the column.\n- PDF export waits for math to be typeset.\n- Plans can't trap a chat, and interrupted or empty turns don't end it. Project chats answer where they are asked.\n- A terminal node waits for its command to finish, not its first pause.\n- `{{` suggestions appear again on compiler-managed workflows.\n- Chat no longer crashes with a Claude model.\n\n### Notes\n- Signing in needs the updated sign-in page on canoryn.app, which rolls out alongside this release.\n- Published pages remember which account published them.\n\n### Install\nCanoryn is still in beta and is not notarized yet, so macOS may show a one-time warning. To open it:\n- **Easiest (Terminal):** `xattr -dr com.apple.quarantine /Applications/Canoryn.app`\n- **Or:** System Settings → Privacy & Security → scroll down → **Open Anyway**\n\nThanks for trying the beta — **support@procodeai.com**.\n",
+      "dmgUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.6.1/Canoryn.dmg",
+      "dmgSha256Url": "https://github.com/procodeai/canoryn-releases/releases/download/v0.6.1/Canoryn.dmg.sha256",
+      "appcastUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.6.1/appcast.xml",
+      "dmgSizeBytes": 47022182,
+      "dmgSha256": "d7045a973b091390c9bb1d7a0f7d7c3eaa82ceb2a673ead5c0b8d344c8c575ec"
+    },
     {
       "tag": "v0.6.0",
       "version": "0.6.0",
