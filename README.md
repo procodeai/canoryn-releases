@@ -1,82 +1,62 @@
-# Canoryn Public Releases
+# Canoryn
 
 <p align="center">
-  <img src="https://canoryn.app/logo.svg" alt="Canoryn Logo" width="128" height="128" />
+  <img src="https://canoryn.app/logo.svg" alt="Canoryn logo" width="112" height="112" />
 </p>
 
 <p align="center">
-  <strong>Build private, local-first AI agents for your Mac.</strong>
+  <a href="https://github.com/procodeai/canoryn-releases/releases/latest"><img src="https://img.shields.io/github/v/release/procodeai/canoryn-releases?style=flat-square&color=orange" alt="Latest release" /></a>
+  <img src="https://img.shields.io/badge/macOS-15.4%2B-lightgrey?style=flat-square" alt="macOS 15.4 or later" />
+  <img src="https://img.shields.io/badge/status-beta-brightgreen?style=flat-square" alt="Beta" />
 </p>
 
-<p align="center">
-  <a href="https://canoryn.app"><img src="https://img.shields.io/badge/Website-canoryn.app-000000?style=flat-square" alt="Website" /></a>
-  <a href="https://canoryn.app/docs"><img src="https://img.shields.io/badge/Documentation-docs-blue?style=flat-square" alt="Docs" /></a>
-  <a href="https://github.com/procodeai/canoryn-releases/releases/latest"><img src="https://img.shields.io/github/v/release/procodeai/canoryn-releases?style=flat-square&color=orange" alt="Latest Release" /></a>
-  <img src="https://img.shields.io/badge/Platform-macOS%2014%2B-lightgrey?style=flat-square" alt="Platform" />
-  <img src="https://img.shields.io/badge/Status-Beta-brightgreen?style=flat-square" alt="Status" />
-</p>
+Canoryn is an agent workspace for your Mac, built natively in Swift. Open a project and chat with an agent that reads, edits, runs and tests it, with every step in view and a question before anything risky. Review and commit what changed, write Markdown documents, and build workflows on a canvas with live browsers and terminals. It uses your own models: OpenAI, Anthropic, Gemini, a ChatGPT subscription, any OpenAI-compatible server, or local models through Ollama.
 
----
+This repository is where the public beta builds are published. The app's source is private.
 
-Public releases for **Canoryn** — a native, local-first AI agent workspace for macOS. This repository hosts the public beta builds (`.dmg`) and is the central place to track releases. The app's source is private; only the build artifacts are published here.
+## Download
 
-Found a bug or have a request? Please open an issue on our public [Issue Tracker](https://github.com/procodeai/canoryn-issues/issues).
+Get the latest `Canoryn.dmg` from [Releases](https://github.com/procodeai/canoryn-releases/releases/latest), or download it directly: [Canoryn.dmg](https://github.com/procodeai/canoryn-releases/releases/latest/download/Canoryn.dmg). Each release also lists a SHA-256 checksum.
 
----
+Once installed, Canoryn checks for updates itself.
 
-## Key Features
+## Install
 
-*   📐 **Visual Architect:** Compose your own agents on a canvas — wire AI models, logic, and native macOS actions into repeatable workflows, saved as portable `.cryn` files.
-*   🎙️ **Talk or type:** Drive Canoryn by voice (push-to-talk or continuous) or chat — it acts on your apps and system.
-*   🔑 **Bring Your Own Models:** Run fully local models via Ollama, or connect your own cloud keys (OpenAI, Anthropic).
-*   🧠 **Personalized Memory:** Local, private context that persists across sessions — nothing leaves your Mac.
-*   🔒 **Local-First & Private:** Workflows, settings, and keys stay on your device; secrets live in the macOS Keychain.
-*   🪶 **Native & Lightweight:** Built natively in Xcode for macOS — the whole app is ~20 MB.
+1. Open the DMG and drag **Canoryn** into Applications.
+2. Open Canoryn once. The beta is not notarized yet, so macOS may say it could not verify the app. Clear that once, either way:
+   - **Terminal (fastest):**
+     ```bash
+     xattr -dr com.apple.quarantine /Applications/Canoryn.app
+     ```
+     Then open Canoryn from Applications.
+   - **System Settings:** click **Done** on the warning, open **System Settings → Privacy & Security**, scroll to **Security**, click **Open Anyway** next to the Canoryn message, confirm with Touch ID or your password, and click **Open Anyway** again.
 
----
+You only do this once per install.
 
-## Installation & Setup
+## Requirements
 
-Canoryn is in open public beta. During beta we distribute outside the paid Apple Developer Program, so the build is **not notarized yet** — macOS shows a one-time security prompt on first launch. Notarized builds (no prompt) ship once our Apple Developer ID is set up.
+- macOS 15.4 (Sequoia) or later. Canoryn 0.5.0 is the last version for macOS 14.
+- Apple Silicon or Intel. Apple Silicon is recommended if you run local models.
+- A model: an API key for a cloud provider, a ChatGPT subscription, or a local model through Ollama.
 
-### 1. Download & move
+## What's new in 0.6.1
 
-1.  Download the latest build from the [Releases](https://github.com/procodeai/canoryn-releases/releases/latest) page, or use the [direct download link](https://github.com/procodeai/canoryn-releases/releases/latest/download/Canoryn.dmg).
-2.  Open the `.dmg` and drag **Canoryn** into your `/Applications` folder.
+- **Sign in from the app** with a one-time code; an Account page shows you, your plan and this Mac. Everything except publishing works without an account.
+- **Models has its own section.** Set up providers once; chat and every AI node pick from them.
+- **The agent core is the default engine for chat.** It checks its own edits and has you review its plan first.
+- **Math in documents:** `$…$` and `$$…$$` render as on GitHub, in the app, exports, PDFs and published pages.
+- **Agents comment** on code and documents, and you can answer, edit or delete their threads.
+- Claude and Gemini stream end to end, plus many fixes from 0.6.0.
 
-### 2. Open it past Gatekeeper (one time)
+Full notes: [Canoryn 0.6.1](https://github.com/procodeai/canoryn-releases/releases/tag/v0.6.1) · All versions: [changelog](https://canoryn.app/docs/changelog)
 
-On first launch macOS will say it *"could not verify Canoryn is free of malware."* Use either method:
+## Your data
 
-#### Option A — Terminal (fastest)
+Projects, documents, workflows and chats stay on your Mac, and API keys are kept in the macOS Keychain. Canoryn talks to the model provider you choose directly; with a local model the whole loop stays on your Mac. Nothing is published unless you publish it.
 
-```bash
-xattr -dr com.apple.quarantine /Applications/Canoryn.app
-```
+## Links
 
-Then open Canoryn normally from Applications or Launchpad.
-
-#### Option B — System Settings
-
-1.  Double-click **Canoryn**; on the warning, click **Done** (not "Move to Trash").
-2.  Open **System Settings → Privacy & Security**.
-3.  Scroll to the **Security** section — you'll see *"Canoryn was blocked to protect your Mac."* Click **Open Anyway**.
-4.  Authenticate with Touch ID or your password, then click **Open Anyway** once more.
-
-You only need to do this once per install.
-
----
-
-## System Requirements
-
-*   **OS:** macOS 14.0 (Sonoma) or newer.
-*   **Hardware:** Universal build (Apple Silicon & Intel). Apple Silicon (M1 or newer) is recommended for running local models via Ollama; Intel Macs are supported but local inference is slower.
-
----
-
-## Helpful Links
-
-*   **Website:** [canoryn.app](https://canoryn.app)
-*   **Documentation:** [canoryn.app/docs](https://canoryn.app/docs)
-*   **Report a bug:** [canoryn-issues](https://github.com/procodeai/canoryn-issues/issues)
-*   **Studio:** [procodeai.com](https://procodeai.com)
+- Website: [canoryn.app](https://canoryn.app)
+- Documentation: [canoryn.app/docs](https://canoryn.app/docs)
+- Report a bug or request a feature: [canoryn-issues](https://github.com/procodeai/canoryn-issues/issues)
+- Support: [support@procodeai.com](mailto:support@procodeai.com)
