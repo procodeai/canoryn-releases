@@ -23,15 +23,9 @@ Once installed, Canoryn checks for updates itself.
 ## Install
 
 1. Open the DMG and drag **Canoryn** into Applications.
-2. Open Canoryn once. The beta is not notarized yet, so macOS may say it could not verify the app. Clear that once, either way:
-   - **Terminal (fastest):**
-     ```bash
-     xattr -dr com.apple.quarantine /Applications/Canoryn.app
-     ```
-     Then open Canoryn from Applications.
-   - **System Settings:** click **Done** on the warning, open **System Settings → Privacy & Security**, scroll to **Security**, click **Open Anyway** next to the Canoryn message, confirm with Touch ID or your password, and click **Open Anyway** again.
+2. Open Canoryn. From 0.6.2 the app is signed with a Developer ID and notarized by Apple, so it opens like any Mac app, with no warning to clear.
 
-You only do this once per install.
+Still on 0.6.1 or older? Let it update itself from the in-app updater, or download the current version above.
 
 ## Requirements
 
