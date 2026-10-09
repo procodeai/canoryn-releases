@@ -1,8 +1,22 @@
 {
   "schemaVersion": 1,
-  "latest": "v0.6.1",
-  "generatedAt": "2026-10-02T15:52:38Z",
+  "latest": "v0.6.2",
+  "generatedAt": "2026-10-09T21:37:57Z",
   "releases": [
+    {
+      "tag": "v0.6.2",
+      "version": "0.6.2",
+      "title": "Canoryn 0.6.2",
+      "publishedAt": "2026-10-09T21:37:52Z",
+      "prerelease": false,
+      "summary": "",
+      "body": "# Canoryn 0.6.2\n\nCanoryn now installs like any Mac app: the download is signed and notarized by Apple, so there is no warning and no workaround to open it. Documents learn to teach, with titled code blocks, highlighted lines and copy on hover. Long chats scroll smoothly, and the agent no longer stops silently when a reply runs past the model's limit.\n\n### Added\n- **No more Gatekeeper step.** The app and the download are signed with a Developer ID and notarized by Apple. Open the DMG, drag Canoryn to Applications, launch. Existing installs update through the usual in-app update.\n- **Code that teaches.** Give a code block a file name as its title and highlight the lines that matter. It reads the same in Preview, Edit, chat, published pages and PDF, using the markup GitHub and Docusaurus already use. Hover any code block to copy it; hover a diagram, formula or photo to copy or open it; click a photo to zoom.\n\n### Changed\n- **Long chats scroll smoothly.** Scrolling no longer re-renders the conversation on every tick, and a conversation loads whole when it opens.\n- **The agent finishes or says why not.** Every model now reports why it stopped. When a reply is cut off at the model's output limit, Canoryn retries with more room, then asks the model to continue, and only then tells you the request is not finished. A cut-off tool call never runs half-done. Each model is asked for its own output limit instead of one fixed number.\n\n### Fixed\n- Exported HTML and PDF documents show code with syntax highlighting and a copy button.\n- Chats on Claude Opus 5.5 and Haiku 5.5 work again; they now think the way the other Claude 5 models do.\n- The copy chip on a code block copies the code, not an image.\n\n### Notes\n- On first launch after this update macOS may ask again for Accessibility, Automation and the microphone, because the app's signature changed. It asks once.\n\nThanks for trying the beta — **support@procodeai.com**.\n",
+      "dmgUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.6.2/Canoryn.dmg",
+      "dmgSha256Url": "https://github.com/procodeai/canoryn-releases/releases/download/v0.6.2/Canoryn.dmg.sha256",
+      "appcastUrl": "https://github.com/procodeai/canoryn-releases/releases/download/v0.6.2/appcast.xml",
+      "dmgSizeBytes": 47269875,
+      "dmgSha256": "90ed49d656a7cd40d51abcabac1017352b488f8980c3cdb9771326202050a097"
+    },
     {
       "tag": "v0.6.1",
       "version": "0.6.1",
